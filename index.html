@@ -6,51 +6,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <a class="navbar-brand" href="javascript:void(0)"><img src="logo.png" alt="" height="100px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
+          <a class="nav-link" href="#hero">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
+          <a class="nav-link" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
+        <button class="btn btn-primary" type="button" style="background-color: rgb(219, 196, 162);">Search</button>
       </form>
     </div>
   </div>
 </nav>
-<div class="container-fluid p-5 bg-primary text-white text-center hero">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+
+<div class="container p-5 py-5 bg-primary  text-center text-center hero">
+  <h1>INTERIOR DESIGN</h1>
+  <p>Where Luxury Meets Comfort</p> 
 </div>
   
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-6">
-      <h3>About Us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem cumque qui laborum doloribus officiis modi ad provident, exercitationem impedit dolores magnam alias suscipit ut eligendi hic. Quam, placeat inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem cumque qui laborum doloribus officiis modi ad provident, exercitationem impedit dolores magnam alias suscipit ut eligendi hic. Quam, placeat inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem cumque qui laborum doloribus officiis modi ad provident, exercitationem impedit dolores magnam alias suscipit ut eligendi hic. Quam, placeat inventore?</p>
-    </div>
-    <div class="col-sm-6" >
-      <img src="about.jpg" alt="">
-    </div>
-    
-  </div>
-</div>
+ <section class="py-5 bg-light sec1" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        
+       
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="about.avif" class="img-fluid rounded" alt="Interior Design">
+        </div>
 
+       
+        <div class="col-md-6">
+          <h2 class="mb-3">About Us</h2>
+          <p >
+            Welcome to our Interior Design Studio, where creativity meets comfort. 
+            We specialize in transforming everyday spaces into elegant, functional, 
+            and inspiring environments using modern design principles.
+          </p>
+          <p >
+            Our goal is to design interiors that reflect your personality and lifestyle. 
+            Whether it’s a cozy home or a modern workspace, we focus on simplicity, 
+            balance, and smart use of space.
+          </p>
+          <p >
+            This webpage is built using Bootstrap, showcasing responsive layouts 
+            and clean design elements to create a seamless user experience.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light sec1" id="products">
+    <div class="container">
+      <div class="row align-items-center">
+         <div class="text-center ">
+      <h2>Our Products</h2>
+      <p >We provide high-quality interior design Products</p>
+    </div>
+       
+        <div class="col-md-3 mb-4 mb-md-0 pro1" >
+          <img src="pro1.jpg" class="img-fluid rounded" alt="Interior Design">
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0 pro2">
+          <img src="pro2.avif" class="img-fluid rounded" alt="Interior Design">
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0 pro3">
+          <img src="pro3.avif" class="img-fluid rounded" alt="Interior Design">
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0 pro4">
+          <img src="pro4.jpg" class="img-fluid rounded" alt="Interior Design">
+        </div>  
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-5 sec2" id="service">
+  <div class="container">
+    
+    
+    <div class="text-center mb-5">
+      <h2>Our Services</h2>
+      <p >We provide high-quality interior design solutions</p>
+    </div>
+
+   
+    <div class="row text-center">
+      
+      
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded py-5 serv1">
+          <h4>Residential Design</h4>
+          <p class="text-muted">
+            We create comfortable and stylish home interiors that reflect your personality and lifestyle.
+          </p>
+          <p class="text-muted">
+            From living rooms to bedrooms and kitchens, we bring your dream home to life with thoughtful design and attention to detail.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded py-5 serv2">
+          <h4>Commercial Design</h4>
+          <p class="text-muted">
+            We design modern and functional office and business spaces with a focus on productivity.
+          </p>
+          <p class="text-muted">
+            We design modern and functional office and business spaces with a focus on productivity.
+
+            We create smart layouts that balance aesthetics with efficiency for a better work environment
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded py-5 serv3">
+          <h4>Space Planning</h4>
+          <p class="text-muted">
+            We optimize layouts to ensure efficient use of space and better flow in every environment.
+          </p>
+          <p class="text-muted">
+            Our planning improves functionality while maintaining a clean and balanced design.
+            We carefully arrange elements to enhance movement, comfort, and usability in every space.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="row align-items-center">
+
+      
+      <div class="col-md-6">
+        <h3 class="mb-4">Contact Us</h3>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Send Message</button>
+        </form>
+      </div>
+
+      
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="contact.webp" class="img-fluid rounded" alt="Contact Image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Brand -->
+      <div class="col-md-4 mb-3">
+        <h5>InteriorDesign</h5>
+        <p>Designing elegant and modern living spaces tailored to your lifestyle.</p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p class="mb-1">Kochi, Kerala</p>
+        <p class="mb-1">+91 98765 43210</p>
+        <p class="mb-0">info@interiordesign.com</p>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="text-center pb-3">
+      <small>© 2026 InteriorDesign. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
