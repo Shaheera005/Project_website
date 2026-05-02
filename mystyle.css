@@ -1,0 +1,9 @@
+
+.hero {
+  background-image: url('hero.jpg'); /* change to your image path */
+  background-size: cover;       /* makes image cover entire area */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-position: bottom;
+  padding: 100px 50px 100px 50px;         /* adjust height as needed */
+}
